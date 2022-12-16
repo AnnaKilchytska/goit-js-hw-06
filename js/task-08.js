@@ -11,6 +11,7 @@ formEl.addEventListener("submit", (event) => {
   if (email !== "" && password !== "") {
     formInputData.email = email;
     formInputData.password = password;
+    formEl.reset();
     console.log(formInputData);
   } else {
     alert("Всі поля мають бути заповнені!");
